@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: darkslategrey;
+        }
+        img {
+          display: block;
+          max-height: 600px;
+        }
+    </style>
+</head>
+<body>
+  <input id="fileItem" type="file" multiple="">
+  <!-- <div>Audiomachine - Final Hope</div> -->
+  <img src="" alt="" id="image">
+  <script src="parseMP3Metadata.js"></script>
+</body>
+</html>
+
+<!-- let acc = 0;
+let length = 0;
+
+document.getElementById("fileItem").addEventListener("change", async event => {
+  length = event.target.files.length;
+
+  for (const file of event.target.files) {
+    const a = performance.now();
+    const tags = await parseBlob(file);
+    const time = performance.now() - a;
+
+    acc += time;
+    console.log(time);
+    console.log(tags);
+  }
+  console.log("Average", acc / length);
+  console.log("Total", acc / 1000);
+}); -->
